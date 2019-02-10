@@ -1,0 +1,61 @@
+{
+  "name": "okaruto/cryptonator",
+  "description": "Cryptonator Merchant API",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "api",
+    "sdk",
+    "cryptocurrency",
+    "merchant",
+    "cryptonator",
+    "cryptonator.com"
+  ],
+  "authors": [
+    {
+      "name": "Okaruto Shirukoto",
+      "email": "okaruto@protonmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "ext-curl": "*",
+    "ext-openssl": "*",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^6.0",
+    "lmc/http-constants": "^1.0"
+  },
+  "require-dev": {
+    "ext-xdebug": "*",
+    "phpunit/phpunit": "^7.0",
+    "squizlabs/php_codesniffer": "^3.0",
+    "phpmd/phpmd": "^2.6",
+    "vimeo/psalm": "^2.0",
+    "php-coveralls/php-coveralls": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Okaruto\\Cryptonator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Okaruto\\Cryptonator\\Tests\\": "test/"
+    }
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@md-check",
+      "@psalm-check",
+      "@test"
+    ],
+    "cs-check": "phpcs --parallel=2 ./src",
+    "cs-fix": "phpcbf --parallel=2 ./src",
+    "md-check": "phpmd ./src text ./phpmd_ruleset.xml",
+    "psalm-check": "mkdir -p ./test-result && psalm --config=./psalm.xml --threads=2 --no-cache --report=./test-result/psalm-report.xml",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover ./test-result/coverage.xml",
+    "test-coverage-html": "phpunit  --coverage-html ./test-result/coverage/"
+  }
+}

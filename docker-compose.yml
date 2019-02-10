@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  cryptonator-test:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./test-result:/var/www/html/test-result:rw
+      - ./test:/var/www/html/test:ro
+      - ./src:/var/www/html/src:ro
