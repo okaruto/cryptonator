@@ -7,12 +7,6 @@ php:
   - master
   - nightly
 
-matrix:
-  allow_failures:
-    - php:
-        - master
-        - nightly
-
 install:
   - composer install
 
