@@ -2,7 +2,7 @@
 
 Okaruto/Cryptonator is an alternative implementation of the [Cryptonator.com Merchant API SDK](https://github.com/cryptonator/merchant-api-sdk-php). All API methods to use the [Payment API](https://cryptonator.zendesk.com/hc/en-us) are implemented.
 
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg?style=flat-square)](https://php.net/)
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg?style=flat-square)](https://php.net/) [![Build Status](https://travis-ci.com/okaruto/cryptonator.svg?branch=master)](https://travis-ci.com/okaruto/cryptonator) ![Coverage Status](https://coveralls.io/repos/github/okaruto/cryptonator/badge.svg?branch=master)](https://coveralls.io/github/okaruto/cryptonator?branch=master)
 
 ## Installation
 
