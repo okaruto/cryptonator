@@ -30,7 +30,7 @@ interface MerchantApiInterface
     /**
      * Return a specific invoice
      *
-     * @param string $invoiceId
+     * @param string $invoiceId Invoice id
      *
      * @return Invoice
      */
