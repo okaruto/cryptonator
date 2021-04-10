@@ -12,4 +12,4 @@ script:
   - composer test-coverage
 
 after_script:
-  - php vendor/bin/php-coveralls -v
+  - XDEBUG_MODE=coverage php vendor/bin/php-coveralls -v
